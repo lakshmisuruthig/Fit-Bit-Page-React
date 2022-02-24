@@ -9,15 +9,16 @@ const ProductPreview = (props) =>{
           <img src={props.currentPreviewImage} alt="Product Preview"/>
           {
             props.currentSelectedFeature === 1 ? 
-
-            <div className={classes.TimeSection}>
-            <p>{`${currentHour}:${currentMinutes}`}</p>
-          </div>  :
-
+            
           <div className={classes.HeartBeatSection}>
           <i className="fa-solid fa-heart-pulse"></i>
           <p>78</p>
           </div>
+              :
+
+          <div className={classes.TimeSection}>
+          <p>{`${currentHour}:${currentMinutes}`}</p>
+        </div>
           }
         
 
